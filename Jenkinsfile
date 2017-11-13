@@ -9,7 +9,7 @@ node
     stage('JIRA') {
         
          def issue = jiraGetFields idOrKey: 'DSS-51', site: 'LOCAL', failOnError: false
-         echo issue.data.toString()
+         echo issue.data.Description.toString()
          
     }
 
